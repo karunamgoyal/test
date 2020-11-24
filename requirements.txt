@@ -1,0 +1,11 @@
+laserembeddings
+torch
+keras
+tensorflow-gpu
+nltk
+scikit-learn
+jupyter
+fasttext
+bpemb
+regex
+cython
