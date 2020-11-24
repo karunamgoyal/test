@@ -37,26 +37,26 @@ def get_dense_model():
     return model
 
 
-ft = Input(shape=(None, 32, 100))
-multi = Input(shape=(None, 32, 300))
-laser = Input(shape=(None, 1024))
+# ft = Input(shape=(None, 32, 100))
+# multi = Input(shape=(None, 32, 300))
+# laser = Input(shape=(None, 1024))
 
-ft = Bidirectional(
-    LSTM(
-        units=50,
-        dropout=0.3,
-        recurrent_dropout=0.3
-        # return_sequences=True,
-    )(ft)
-)
+# ft = Bidirectional(
+#     LSTM(
+#         units=50,
+#         dropout=0.3,
+#         recurrent_dropout=0.3
+#         # return_sequences=True,
+#     )(ft)
+# )
 
-multi = Bidirectional(
-    LSTM(
-        units=50,
-        dropout=0.3,
-        recurrent_dropout=0.3
-        # return_sequences=True,
-    )(multi)
-)
+# multi = Bidirectional(
+#     LSTM(
+#         units=50,
+#         dropout=0.3,
+#         recurrent_dropout=0.3
+#         # return_sequences=True,
+#     )(multi)
+# )
 
 
