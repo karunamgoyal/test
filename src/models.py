@@ -9,11 +9,11 @@ def get_seq_model():
         LSTM(
             units=50,
             dropout=0.3,
-            recurrent_dropout=0.3,
-            return_sequences=True,
+            recurrent_dropout=0.3
+            #return_sequences=True,
         )
     ))
-    model.add(AttentionWithContext(name="attention"))
+    #model.add(AttentionWithContext(name="attention"))
     model.add(Dense(3, activation='softmax'))
 
     model.compile(loss='categorical_crossentropy',
@@ -45,7 +45,7 @@ ft = Bidirectional(
     LSTM(
         units=50,
         dropout=0.3,
-        recurrent_dropout=0.3,
+        recurrent_dropout=0.3
         # return_sequences=True,
     )(ft)
 )
@@ -54,7 +54,7 @@ multi = Bidirectional(
     LSTM(
         units=50,
         dropout=0.3,
-        recurrent_dropout=0.3,
+        recurrent_dropout=0.3
         # return_sequences=True,
     )(multi)
 )
